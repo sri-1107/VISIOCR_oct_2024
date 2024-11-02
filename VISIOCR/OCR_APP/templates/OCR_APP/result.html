@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OCR Result</title>
+</head>
+<body>
+    <h1>OCR Result</h1>
+    <img src="{{ uploaded_file_url }}" alt="Uploaded Image">
+    <h2>Extracted Text:</h2>
+    <p>{{ extracted_text|linebreaks }}</p>
+    <a href="{% url 'home' %}">Go back</a>
+</body>
+</html>
